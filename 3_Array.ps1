@@ -5,10 +5,13 @@ c: - Schreibe alle laufenden Prozesse in ein Array und gebe die ersten drei Eint
 
 #>
 
+#Aufgabe a
 $fruits = "Apple","Pear","Banana","Orange"
 $fruits += "Melon","Peach","Lemon"
 
+#Aufgabe b
 Write-Host "Die letzten drei Fruechte: $($fruits[-3..-1])"
 
+#Aufgabe c
 $runningProcesses = Get-Process
 Write-Host "Die ersten drei laufenden Prozesse: $($runningProcesses[0..2])"
